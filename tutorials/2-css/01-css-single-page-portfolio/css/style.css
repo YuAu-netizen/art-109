@@ -1,3 +1,77 @@
+/* CSS resets */
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+/* General CSS */
+
 body{
     background-color: #b1cae1;
+}
+
+header {
+    padding: 6rem;
+    margin-bottom: 3rem;
+    background-color: #fff;
+    border-bottom: #000 1px solid;
+    /* text-align: center; */
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+main {
+
+}
+
+.about-section, .portfolio-section, .contact-section {
+    padding: 3rem;
+    margin-bottom: 5rem;
+    background-color: #fff;
+}
+
+.about-content, .portfolio-content, .contact-content {
+    max-width: 60rem;
+    margin: 2rem auto;
+}
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: #fff;
+    padding: 4rem;
+    text-align: justify;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+}
+
+.about-section {
+    background-color: #fff;
+}
+
+.portfolio-section {
+    background-color: rgb(218,220,220);
+}
+
+footer{
+    background-color: #333;
+    color: #eee;
+    padding: 1rem;
+    text-align: end;
 }
