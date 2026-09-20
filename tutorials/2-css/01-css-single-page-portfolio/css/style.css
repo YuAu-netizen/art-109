@@ -2,7 +2,7 @@
 
 :root {
 --bg-color-1: #fff;
---bg-color-2: #dadcdc;
+--bg-color-2: #dbf0f8;
 --font: #111;
 --accent-1: #b3e7ff;
 --accent-2: #023C40;
@@ -34,7 +34,7 @@ html {
 }
 
 body{
-    background-color: var(--bg-color-1);
+    background-color: #b3e7ff;
     color: var(--font);
     font-family: "Nunito", sans-serif;
     font-size: 1.5rem;
