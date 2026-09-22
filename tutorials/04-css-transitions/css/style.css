@@ -1,0 +1,40 @@
+
+
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.square {
+    background-color: rgb(151, 224, 109);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color:rgb(216, 75, 51);
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    color: white;
+    background-color: green;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+    
+.button:hover {
+    background-color: rgb(238, 255, 0);
+    color:black;
+    transform: scale(1.5);
+}
