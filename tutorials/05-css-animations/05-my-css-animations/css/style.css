@@ -1,0 +1,144 @@
+/*... Text Here... */
+
+.title {
+    text-align: center;
+    margin-top: 80px auto;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 80px auto;
+    font-family: "Lora", serif;
+}
+
+
+/*..... Shared Mood Card Style..... */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+}
+
+.mood-card {
+    width: 250px;
+    height: 150px;
+
+    border-radius: 20px;
+    margin: 30px;
+
+    text-align: center;
+    line-height: 150px;
+
+    font-size: 30px;
+    font-family: "Lora", serif;
+}
+
+
+/*..... Happy..... */
+
+.mood-card-1 {
+    animation: happyChanger 8s infinite ease-in-out alternate;
+}
+
+@keyframes happyChanger {
+
+    0% {
+        background-color: #ffe48b;
+    }
+
+    33% {
+        background-color: #e6838b;
+    }
+
+    66% {
+        background-color: #ffc16a;
+    }
+
+    100% {
+        background-color: #ffe48b;
+    }
+}
+
+
+/*..... Sad..... */
+
+.mood-card-2 {
+    animation: sadChanger 16s infinite ease-in-out alternate;
+}
+
+@keyframes sadChanger {
+
+    0% {
+        background-color: #96b5a4;
+    }
+
+    33% {
+        background-color: #828ba8;
+    }
+
+    66% {
+        background-color: #8d9798;
+    }
+
+    100% {
+        background-color: #96b5a4;
+    }
+}
+
+
+/*..... Calm..... */
+
+.mood-card-3 {
+    animation: calmChanger 12s infinite ease-in-out alternate;
+}
+
+@keyframes calmChanger {
+
+    0% {
+        background-color: #69d0ff;
+    }
+
+    33% {
+        background-color: #eecbee;
+    }
+
+    66% {
+        background-color: #e6e6fa;
+    }
+
+    100% {
+        background-color: #98FB98;
+    }
+}
+
+
+/*..... Energetic..... */
+
+.mood-card-4 {
+    animation: energeticChanger 6s infinite ease-in-out alternate;
+}
+
+@keyframes energeticChanger {
+
+    0% {
+        background-color: #4169E1;
+    }
+
+    33% {
+        background-color: #50C878;
+    }
+
+    66% {
+        background-color: #86fff3;
+    }
+
+    100% {
+        background-color: #4169E1;
+    }
+}
