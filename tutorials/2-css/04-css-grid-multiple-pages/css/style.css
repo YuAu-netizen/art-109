@@ -153,15 +153,32 @@ main {
 
 .about-content,
 .portfolio-content,
-.content-content {
+.content-content, 
+.project-content {
     max-width: 60rem;
     margin: 0 auto 7rem auto;
 }
 
 .about-content h2,
 .portfolio-content h2,
-.content-content h2 {
+.content-content h2,
+.project-content h2 {
     margin: 2rem 0;
+}
+
+
+/* project content is for project pages */
+.project-content {
+    text-align: justify;
+}
+
+.project-content img {
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.project-content p {
+    padding: 1rem;
 }
 
 .portfolio-item {
@@ -169,6 +186,11 @@ main {
     background: var(--font);
     color: var(--bg-color-1);
     border-radius: .3rem;
+}
+
+.portfolio-item a {
+    text-decoration: none;
+    color: var(--bg-color-1);    
 }
 
 .portfolio-item p {
