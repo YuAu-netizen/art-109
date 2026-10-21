@@ -16,8 +16,12 @@ function draw(){
 
 }
 
-function mouseMove(){
+function mouseMoved(){
+   drawThing(mouseX, mouseY);
+}
+
+function drawThing(_x, _y){
     strokeWeight(0);
     fill(random(200, 255), random(200, 255), random(200, 255));
-    ellipse(mouseX, mouseY, 30, 30);    
+    ellipse(_x, _y, 30, 30);     
 }
