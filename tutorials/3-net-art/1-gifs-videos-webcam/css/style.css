@@ -1,0 +1,25 @@
+
+.therapy-time {
+    position: absolute;
+    top: -10px;
+    left: -60px;
+}
+
+.hug-div {
+    position: relative;
+    margin: 50px auto;
+    max-width: 600px;
+    font-size: 3rem;
+}
+
+.comfort-hug {
+    position: absolute;
+    top: 50px;
+    left: 285px;
+}
+
+.friend-hug {
+    position: absolute;
+    top: 479px;
+    left: 50px;
+}
