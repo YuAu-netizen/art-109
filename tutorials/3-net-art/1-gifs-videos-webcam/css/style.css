@@ -23,3 +23,9 @@
     top: 479px;
     left: 50px;
 }
+
+.lens {
+    font-size: 2rem;
+    position: absolute;
+    left: 150px;
+}
