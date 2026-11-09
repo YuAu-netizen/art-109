@@ -303,37 +303,7 @@ input:focus-visible {
 
 
 
-  /* Minimum sizes keep the signs and memory lodes usable on touchscreens. */
-  /* Equal-sized tap areas, without stretching the differently shaped PNGs. */
-
-
-  .road-left,
-  .road-middle,
-  .road-right {
-    width: clamp(44px, 13%, 64px);
-    height: clamp(52px, 15vw, 78px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .road-left img,
-  .road-middle img,
-  .road-right img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-  }
-
-
-
-  /* Keep the taller, narrow central sign fully within the road artwork. */
-  
-  .road-middle {
-    top: 72%;
-  }
+  /* Sign widths and positions remain proportional to the artwork. */
 
   .memory-lode {
     width: max(15%, 44px);
