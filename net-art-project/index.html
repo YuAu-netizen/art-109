@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff6cb">
+  <title>Interactive Memory Park</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  
+  <main class="story-shell">
+    <div id="stage" class="stage" aria-label="Interactive illustrated story scenes">
+      <section id="road-scene" class="scene is-active" aria-label="The crossroads">
+        <div class="artwork-frame">
+          <img class="scene-art" src="images/interactive-road-map.JPG" alt="black cat, luminous road, autumn orange, blue lakeside.">
+          <button type="button" class="image-button road-left" data-scene="left" aria-label="Explore the park bench on the left" title="Explore the park bench">
+            <img src="images/sign-left.PNG" alt="">
+          </button>
+          <button type="button" class="image-button road-middle" data-dialog="quiz" aria-label="Answer the two-word memory quiz at the middle sign" title="Unlock the memory">
+            <img src="images/sign-middle.PNG" alt="">
+          </button>
+          <button type="button" class="image-button road-right" data-scene="right" aria-label="Explore the lake on the right" title="Explore the lake">
+            <img src="images/sign-right.PNG" alt="">
+          </button>
+        </div>
+      </section>
+
+      <section id="left-scene" class="scene" aria-label="The autumn park bench" hidden>
+        <div class="artwork-frame">
+          <img class="scene-art" src="images/bg-left.JPG" alt="black cat, park bench, autumn leaves.">
+          <button type="button" class="image-button memory-lode left-lode" data-memory="Change" aria-label="Open the memory lode hidden below the bench" title="memory lode">
+            <img src="images/memory-lode.PNG" alt="">
+          </button>
+        </div>
+        <nav class="scene-navigation" aria-label="Scene navigation">
+          <button type="button" class="return-button" data-scene="road">← Return to the crossroads</button>
+        </nav>
+      </section>
+
+      <section id="right-scene" class="scene" aria-label="The reflective lake" hidden>
+        <div class="artwork-frame">
+          <img class="scene-art" src="images/bg-right.JPG" alt="cat, reflection, pond, blue lake.">
+          <button type="button" class="image-button memory-lode right-lode" data-memory="Reflect" aria-label="Open the memory lode between the pond and the lake" title="memory lode">
+            <img src="images/memory-lode.PNG" alt="">
+          </button>
+        </div>
+        <nav class="scene-navigation" aria-label="Scene navigation">
+          <button type="button" class="return-button" data-scene="road">← Return to the crossroads</button>
+        </nav>
+      </section>
+
+      <section id="memory-scene" class="scene" aria-label="The final recovered memory" hidden>
+        <div class="artwork-frame">
+          <img class="scene-art" src="images/memory.JPG" alt="autumn, park bench, lake, self-positivity poem.">
+        </div>
+        <nav class="scene-navigation" aria-label="Scene navigation">
+          <button type="button" class="return-button" data-scene="road">← Return to the crossroads</button>
+        </nav>
+      </section>
+    </div>
+  </main>
+
+  <div id="dialog-backdrop" class="dialog-backdrop" hidden>
+    <section id="memory-dialog" class="dialog-card" role="dialog" aria-modal="true" aria-label="Discovered memory" hidden>
+      <p id="memory-word" class="memory-word"></p>
+      <p class="small-note">Remember this word.</p>
+      <button type="button" class="primary-button" data-close>Close</button>
+    </section>
+
+    <section id="quiz-dialog" class="dialog-card" role="dialog" aria-modal="true" aria-labelledby="quiz-heading" hidden>
+      <button type="button" class="close-button" data-close aria-label="Close quiz">×</button>
+      <h2 id="quiz-heading">Towards the central path...</h2>
+      <p class="dialog-description">What two words the memory lodes reveal?</p>
+      <form id="memory-quiz" novalidate>
+        <label for="word-left">Word from the park bench</label>
+        <input id="word-left" type="text" placeholder="First memory word" autocomplete="off" spellcheck="false" required>
+        <label for="word-right">Word from the lake</label>
+        <input id="word-right" type="text" placeholder="Second memory word" autocomplete="off" spellcheck="false" required>
+        <p id="quiz-feedback" class="quiz-feedback" role="status" aria-live="polite"></p>
+        <button class="primary-button" type="submit">Unlock memory</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>
