@@ -10,3 +10,13 @@ main {
     top: 0;
     left: 0;
 }
+
+
+
+/* Positions */
+
+
+main, .card {
+    width: 60%;
+    margin-inline: auto;
+}
