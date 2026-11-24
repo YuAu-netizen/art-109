@@ -1,0 +1,12 @@
+/* All in one, compiled images */
+
+
+main {
+    position: relative;
+}
+
+.card {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
