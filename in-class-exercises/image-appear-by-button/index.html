@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <html>
+
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pop-Up Image</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+<body>
+    <header>
+        <h1>Image Appear</h1>
+    </header>
+    <main>
+        <section class="section" id="section">
+            <div class="content">
+                <h2 class="header">
+                    Here
+                </h2>
+                <form>
+                    <input value="Click" type="button" id="submit"
+                        onclick="document.getElementById('hidden').style.display = 'block';" />
+                    <input value="Hidden" type="button" id="submit"
+                        onclick="document.getElementById('hidden').style.display = 'none';" />
+                </form>
+                <p>Click this button here.</p>
+            </div>
+        </section>
+    </main>
+
+    <img id="hidden" class="hidden" src="images/memory-lode.PNG" />
+
+<footer class="footer"></footer>
+
+</body>
+<!-- <script src="js\script.js"></script> -->
+
+</html>
