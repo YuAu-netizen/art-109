@@ -1,3 +1,13 @@
+/* CSS General */
+
+
+.bg {
+    background-image: url(../images/bg.jpg);
+    background-repeat: repeat;
+}
+
+
+
 /* All in one, compiled images */
 
 
